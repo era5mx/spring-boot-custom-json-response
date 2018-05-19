@@ -1,20 +1,28 @@
-package com.demo.spring.jsonrepsonse.service.impl;
+/*
+ * Copyright david.rengifo.mx 
+ * Todos los derechos reservados
+ */
+package com.anglobal.spring.jsonresponse.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.demo.spring.jsonrepsonse.dto.PersonDTO;
-import com.demo.spring.jsonrepsonse.response.IResponseDTO;
+import com.anglobal.spring.jsonresponse.dto.PersonDTO;
+import com.anglobal.spring.jsonresponse.response.IResponseDTO;
 
+
+/**
+ * The Class JSONResponseServiceImpl.
+ */
 @Service
-public class JSONResponseServiceImpl implements com.demo.spring.jsonrepsonse.service.IJSONResponseService {
+public class JSONResponseServiceImpl implements com.anglobal.spring.jsonresponse.service.IJSONResponseService {
 
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see com.demo.spring.jsonrepsonse.service.JSONResponseService#getPeople()
+	 * @see com.anglobal.spring.jsonresponse.service.JSONResponseService#getPeople()
 	 */
 	@Override
 	public List<? extends IResponseDTO> getPeople() {
