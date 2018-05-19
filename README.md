@@ -23,4 +23,8 @@ Then, execute the command:
 	java -jar target\jsonresponse-1.0.jar
 	
 So, open a browser to
+	
+	http://localhost:8080/v2/api-docs
+	http://localhost:8080/api/swagger-resources
 	http://localhost:8080/swagger-ui.html
+	
