@@ -5,20 +5,22 @@
 package com.anglobal.spring.jsonresponse.response;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+
+import com.anglobal.spring.jsonresponse.response.IResponseCustomDTO;
+import com.anglobal.spring.jsonresponse.response.CustomResponseStatus;
 
 
 /**
  * The Class JSONResponse.
  */
-public class JSONResponse {
+public class JSONCustomResponse {
 
 	/** The data. */
-	private Map<String, List<? extends IResponseDTO>> data = new HashMap<String, List<? extends IResponseDTO>>();
+	private Map<String, IResponseCustomDTO> data = new HashMap<String, IResponseCustomDTO>();
 	
 	/** The status. */
-	private ResponseStatus status;
+	private CustomResponseStatus status;
 	
 	/** The message. */
 	private String message;
@@ -28,7 +30,7 @@ public class JSONResponse {
 	 *
 	 * @return the data
 	 */
-	public Map<String, List<? extends IResponseDTO>> getData() {
+	public Map<String, IResponseCustomDTO> getData() {
 		return data;
 	}
 
@@ -46,7 +48,7 @@ public class JSONResponse {
 	 *
 	 * @return the status
 	 */
-	public ResponseStatus getStatus() {
+	public CustomResponseStatus getStatus() {
 		return status;
 	}
 
@@ -55,7 +57,7 @@ public class JSONResponse {
 	 *
 	 * @param data the data
 	 */
-	public void setData(Map<String, List<? extends IResponseDTO>> data) {
+	public void setData(Map<String, IResponseCustomDTO> data) {
 		this.data = data;
 	}
 
@@ -73,7 +75,7 @@ public class JSONResponse {
 	 *
 	 * @param status the new status
 	 */
-	public void setStatus(ResponseStatus status) {
+	public void setStatus(CustomResponseStatus status) {
 		this.status = status;
 	}
 

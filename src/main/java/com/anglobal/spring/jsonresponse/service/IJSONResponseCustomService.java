@@ -4,15 +4,13 @@
  */
 package com.anglobal.spring.jsonresponse.service;
 
-import java.util.List;
-
-import com.anglobal.spring.jsonresponse.response.IResponseDTO;
+import com.anglobal.spring.jsonresponse.response.IResponseCustomDTO;
 
 
 /**
  * The Interface IJSONResponseService.
  */
-public interface IJSONResponseService {
+public interface IJSONResponseCustomService {
 
 	/**
 	 * A dummy service which returns a DTO list consisting the objects requested
@@ -20,5 +18,5 @@ public interface IJSONResponseService {
 	 *
 	 * @return the people
 	 */
-	public List<? extends IResponseDTO> getPeople();
+	public IResponseCustomDTO getCustomResponse();
 }

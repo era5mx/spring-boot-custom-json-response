@@ -7,6 +7,6 @@ package com.anglobal.spring.jsonresponse.response;
 /**
  * Marker Interface.
  */
-public interface IResponseDTO {
+public interface IResponseCustomDTO {
 
 }

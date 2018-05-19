@@ -11,4 +11,16 @@ This dummy use PersonDTO object if need a custom dummy you can generate plain ol
 Example:
 	Package: com.anglobal.spring.jsonresponse.dto
 	Class name: CustomDTO
+	Target language: Java
+	Source type: JSON
+	Annotation style: None
 
+# Test
+To test, execute the command:
+	mvn clean package
+
+Then, execute the command:
+	java -jar target\jsonresponse-1.0.jar
+	
+So, open a browser to
+	http://localhost:8080/swagger-ui.html

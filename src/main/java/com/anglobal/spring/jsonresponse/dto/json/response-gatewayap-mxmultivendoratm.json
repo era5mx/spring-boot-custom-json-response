@@ -1,0 +1,38 @@
+{
+  "responseCode": {
+    "code": "BOSG000",
+    "message": "No se ha podido recuperar el mensaje de base de datos.",
+    "level": "WARN",
+    "description": "",
+    "moreInfo": ""
+  },
+  "response": {
+    "fechaCaducidad": "2018-05-08 19:15:42.376",
+    "tiempoValidez": 600000,
+    "fechaRegeneracion": "2018-05-08 19:10:42.376",
+    "tiempoRegeneracion": 300000,
+    "id": "N010747:INTRAMX-APPEB-SSO_CAJEROS:Y2MxZmQzODM5YzI2MzU3MzZiYTFhMjBkMWQwZjZhNDJhZThhMGM0NQ==",
+    "ip": "180.186.106.112",
+    "xml": "PFNlc3Npb25CZWFuPjxhY2Nlc3NUb2tlbj4yNzk4MDg3OS0zNGU5LTQzNDctOTYyNC1lZWRmMmQyNjg4Y2Q8L2FjY2Vzc1Rva2VuPjxhcHBJZD5JTlRSQU1YLUFQUEVCLVNTT19DQUpFUk9TPC9hcHBJZD48Y2VudHJvQ29zdG9zPjMyNzU8L2NlbnRyb0Nvc3Rvcz48cGVyZmlsPlVTUlNVUDAwMTwvcGVyZmlsPjxwdWVzdG8+T1BCNzkyPC9wdWVzdG8+PHVzdWFyaW8+bjAxMDc0NzwvdXN1YXJpbz48dmlnZW5jaWFUb2tlbj4yMDE4LTA1LTA4IDE5OjE0OjUwLjkyMTwvdmlnZW5jaWFUb2tlbj48ZXhwaXJlVG9rZW4+MTA8L2V4cGlyZVRva2VuPjxpZEhhc2g+TjAxMDc0NzpJTlRSQU1YLUFQUEVCLVNTT19DQUpFUk9TOlkyTXhabVF6T0RNNVl6STJNelUzTXpaaVlURmhNakJrTVdRd1pqWmhOREpoWlRoaE1HTTBOUT09PC9pZEhhc2g+PHNlc3Npb25JZD5OMDEwNzQ3OklOVFJBTVgtQVBQRUItU1NPX0NBSkVST1M6WTJNeFptUXpPRE01WXpJMk16VTNNelppWVRGaE1qQmtNV1F3WmpaaE5ESmhaVGhoTUdNME5RPT08L3Nlc3Npb25JZD48dmlnZW5jaWFDb29raWU+MjAxOC0wNS0wOCAxOToxNTo0Mi4xMzE8L3ZpZ2VuY2lhQ29va2llPjwvU2Vzc2lvbkJlYW4+",
+    "versionCookie": "1.0",
+    "emisorCookie": "ISBAN_MX",
+    "sesion": {
+      "vigenciaCookie": "2018-05-08 19:15:42.131",
+      "vigenciaToken": "2018-05-08 19:14:50.921",
+      "accessToken": "27980879-34e9-4347-9624-eedf2d2688cd",
+      "appId": "INTRAMX-APPEB-SSO_CAJEROS",
+      "centroCostos": "3275",
+      "expireToken": 10,
+      "idHash": "N010747:INTRAMX-APPEB-SSO_CAJEROS:Y2MxZmQzODM5YzI2MzU3MzZiYTFhMjBkMWQwZjZhNDJhZThhMGM0NQ==",
+      "perfil": "USRSUP001",
+      "puesto": "OPB792",
+      "sessionId": "N010747:INTRAMX-APPEB-SSO_CAJEROS:Y2MxZmQzODM5YzI2MzU3MzZiYTFhMjBkMWQwZjZhNDJhZThhMGM0NQ==",
+      "usuario": "n010747"
+    },
+    "secure": true
+  },
+  "ok": true,
+  "validations": [
+    
+  ]
+}
