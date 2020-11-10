@@ -18,6 +18,5 @@ target/*
 # Other files & folders
 .settings
 .mvn
-.classpath
 mvnw
 mvnw.cmd

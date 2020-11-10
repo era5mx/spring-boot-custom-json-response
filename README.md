@@ -1,7 +1,10 @@
 # spring-boot-json-response
-This is a dummy Spring Boot 1.5.13.RELEASE application with Swagger2 to demonstrate a way to provide JSON response from server. Typically, it can be used while developing a RESTful web service.
+This is a dummy Spring Boot 2.3.5.RELEASE application with Swagger2 to demonstrate a way to provide JSON response from server. Typically, it can be used while developing a RESTful web service.
 
-This is a forked from ashyboyofficial/spring-boot-json-response which is a dummy Spring Boot 1.3.0.RELEASE application
+This project has been built with Eclipse IDE Version: 2020-09 (4.17.0), Apache Maven 3.6.3 y Java(TM) SE Runtime Environment (build 1.8.0_271-b09)
+
+# Prerequisites
+Import the project into eclipse and run the command: `mvn eclipse: eclipse install`
 
 # Custom
 This dummy use PersonDTO object if need a custom dummy you can generate plain old java objects and implement the custom components 
