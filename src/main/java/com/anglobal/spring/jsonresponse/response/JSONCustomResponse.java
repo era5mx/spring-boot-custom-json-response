@@ -7,9 +7,6 @@ package com.anglobal.spring.jsonresponse.response;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.anglobal.spring.jsonresponse.response.IResponseCustomDTO;
-import com.anglobal.spring.jsonresponse.response.CustomResponseStatus;
-
 
 /**
  * The Class JSONResponse.
