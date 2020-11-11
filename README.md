@@ -1,4 +1,4 @@
-# spring-boot-json-response
+# spring-boot-jsonresponse
 This is a dummy Spring Boot 2.3.5.RELEASE application with Swagger2 to demonstrate a way to provide JSON response from server. Typically, it can be used while developing a RESTful web service.
 
 This project has been built with Eclipse IDE Version: 2020-09 (4.17.0), Apache Maven 3.6.3 y Java(TM) SE Runtime Environment (build 1.8.0_271-b09)
@@ -23,7 +23,7 @@ To test, execute the command:
 	`mvn clean package`
 
 Then, execute the command:
-	`java -jar target\jsonresponse-1.0.jar`
+	`java -jar target\spring-boot-jsonresponse-1.0.jar`
 
 So, using the values of the server.servlet-path and server.port defined in the src / main / resources / application.properties file
 open a browser to..

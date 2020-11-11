@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.at.spring.jsonresponse.dto.CustomDTO;
 import com.at.spring.jsonresponse.response.IResponseCustomDTO;
+import com.at.spring.jsonresponse.util.UtilProperties;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,6 +23,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Service
 public class JSONResponseCustomServiceImpl implements com.at.spring.jsonresponse.service.IJSONResponseCustomService {
 
+	private String pathJSON ="pathJSON";
+	
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -29,8 +32,14 @@ public class JSONResponseCustomServiceImpl implements com.at.spring.jsonresponse
 	 */
 	@Override
 	public IResponseCustomDTO getCustomResponse() {
-		String path = "C:\\Users\\alexander\\git\\spring-boot-custom-json-response\\src\\main\\java\\com\\anglobal\\spring\\jsonresponse\\dto\\json\\response-gatewayap-mxmultivendoratm.json";
-		CustomDTO dto = loadJSON(path);
+		//String path = "C:\\Users\\alexander\\git\\spring-boot-custom-json-response\\src\\main\\java\\com\\anglobal\\spring\\jsonresponse\\dto\\json\\response-gatewayap-mxmultivendoratm.json";
+		CustomDTO dto = null;
+		try {
+			dto = loadJSON(UtilProperties.getPropValue(pathJSON));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return dto;
 	}
 	
