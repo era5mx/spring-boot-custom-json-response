@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import com.at.spring.jsonresponse.dto.CustomDTO;
 import com.at.spring.jsonresponse.response.IResponseCustomDTO;
-import com.at.spring.jsonresponse.util.UtilProperties;
+import com.at.spring.utils.UtilProperties;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

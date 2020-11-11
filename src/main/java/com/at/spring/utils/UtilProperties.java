@@ -1,4 +1,4 @@
-package com.at.spring.jsonresponse.util;
+package com.at.spring.utils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

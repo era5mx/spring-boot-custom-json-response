@@ -14,14 +14,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.async.DeferredResult;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+import com.at.spring.utils.SwaggerConfigPath;
 import com.fasterxml.classmate.TypeResolver;
 
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -38,14 +39,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * The Class SwaggerConfig.
  */
+@EnableSwagger2
 @Configuration
-@EnableWebMvc
+//ComponentScan(basePackages="com.at.spring.jsonresponse.controller")
 @ConditionalOnWebApplication
 @SpringBootApplication
-@EnableSwagger2
-/* @ComponentScan(basePackageClasses = {
-		JSONResponseCustomController.class
-}) */
 public class SwaggerConfig implements WebMvcConfigurer {
 	
 	@SuppressWarnings("unused")
@@ -81,7 +79,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
 				.select()
 				.apis(RequestHandlerSelectors.any())
 				.apis(RequestHandlerSelectors.basePackage("com.at.spring.jsonresponse.controller"))
-				.paths(PathSelectors.any()) //.paths(PathSelectors.regex("/api/.*"))
+				.paths(PathSelectors.any())
 				.build()
 				.pathMapping("/")
 				.directModelSubstitute(LocalDate.class, String.class)

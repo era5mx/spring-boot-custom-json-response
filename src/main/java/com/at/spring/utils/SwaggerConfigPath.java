@@ -1,8 +1,6 @@
-package com.at.spring.jsonresponse;
+package com.at.spring.utils;
 
 import java.io.IOException;
-
-import com.at.spring.jsonresponse.util.UtilProperties;
 
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 

@@ -18,7 +18,7 @@ import com.at.spring.jsonresponse.service.IJSONResponseCustomService;
  * The Class JSONResponseCustomController.
  */
 @RestController
-@RequestMapping(value = "/custom")
+@RequestMapping("/custom")
 public class JSONResponseCustomController {
 
 	/** The i JSON response service. */
