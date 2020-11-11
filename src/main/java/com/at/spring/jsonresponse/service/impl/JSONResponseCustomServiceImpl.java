@@ -1,16 +1,16 @@
 /*
- * Copyright david.rengifo.mx 
+* 
  * Todos los derechos reservados
  */
-package com.anglobal.spring.jsonresponse.service.impl;
+package com.at.spring.jsonresponse.service.impl;
 
 import java.io.File;
 import java.io.IOException;
 
 import org.springframework.stereotype.Service;
 
-import com.anglobal.spring.jsonresponse.dto.CustomDTO;
-import com.anglobal.spring.jsonresponse.response.IResponseCustomDTO;
+import com.at.spring.jsonresponse.dto.CustomDTO;
+import com.at.spring.jsonresponse.response.IResponseCustomDTO;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -20,12 +20,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  * The Class JSONResponseServiceImpl.
  */
 @Service
-public class JSONResponseCustomServiceImpl implements com.anglobal.spring.jsonresponse.service.IJSONResponseCustomService {
+public class JSONResponseCustomServiceImpl implements com.at.spring.jsonresponse.service.IJSONResponseCustomService {
 
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see com.anglobal.spring.jsonresponse.service.JSONResponseService#getPeople()
+	 * @see com.at.spring.jsonresponse.service.JSONResponseService#getPeople()
 	 */
 	@Override
 	public IResponseCustomDTO getCustomResponse() {

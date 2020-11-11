@@ -1,5 +1,5 @@
 
-package com.anglobal.spring.jsonresponse.dto;
+package com.at.spring.jsonresponse.dto;
 
 import java.util.HashMap;
 import java.util.Map;

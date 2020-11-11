@@ -1,12 +1,12 @@
 
-package com.anglobal.spring.jsonresponse.dto;
+package com.at.spring.jsonresponse.dto;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.validation.Valid;
 
-import com.anglobal.spring.jsonresponse.response.IResponseCustomDTO;
+import com.at.spring.jsonresponse.response.IResponseCustomDTO;
 
 public class CustomDTO implements IResponseCustomDTO {
 

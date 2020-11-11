@@ -1,17 +1,17 @@
 /*
- * Copyright david.rengifo.mx 
+* 
  * Todos los derechos reservados
  */
-package com.anglobal.spring.jsonresponse.controller;
+package com.at.spring.jsonresponse.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.anglobal.spring.jsonresponse.response.JSONCustomResponse;
-import com.anglobal.spring.jsonresponse.response.CustomResponseStatus;
-import com.anglobal.spring.jsonresponse.service.IJSONResponseCustomService;
+import com.at.spring.jsonresponse.response.CustomResponseStatus;
+import com.at.spring.jsonresponse.response.JSONCustomResponse;
+import com.at.spring.jsonresponse.service.IJSONResponseCustomService;
 
 
 /**

@@ -1,8 +1,8 @@
 /*
- * Copyright david.rengifo.mx 
+* 
  * Todos los derechos reservados
  */
-package com.anglobal.spring.jsonresponse.response;
+package com.at.spring.jsonresponse.response;
 
 import java.util.HashMap;
 import java.util.Map;

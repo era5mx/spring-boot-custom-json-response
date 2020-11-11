@@ -1,8 +1,9 @@
 /**
  * 
  */
-package com.anglobal.spring.jsonresponse.controller;
+package com.at.spring.jsonresponse.controller;
 
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.error.ErrorAttributeOptions;
 import org.springframework.boot.web.servlet.error.ErrorAttributes;
 import org.springframework.boot.web.servlet.error.ErrorController;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.context.request.WebRequest;
-import org.springframework.web.servlet.ModelAndView;
+//import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
@@ -25,8 +26,9 @@ import java.util.Map;
 public class AppErrorController implements ErrorController{
 
     /**
-     * Error Attributes in the Application
+     * Error Attributes in the Application // Usually this requires WebAppConfiguration
      */
+	//@Autowired
     private ErrorAttributes errorAttributes;
 
     private final static String ERROR_PATH = "/error";
@@ -44,10 +46,10 @@ public class AppErrorController implements ErrorController{
      * @param request
      * @return
      */
-    @RequestMapping(value = ERROR_PATH, produces = "text/html")
+    /* @RequestMapping(value = ERROR_PATH, produces = "text/html")
     public ModelAndView errorHtml(HttpServletRequest request) {
         return new ModelAndView("/errors/error", getErrorAttributes(request, false));
-    }
+    } */
 
     /**
      * Supports other formats like JSON, XML

@@ -1,10 +1,10 @@
 /*
- * Copyright david.rengifo.mx 
+* 
  * Todos los derechos reservados
  */
-package com.anglobal.spring.jsonresponse.service;
+package com.at.spring.jsonresponse.service;
 
-import com.anglobal.spring.jsonresponse.response.IResponseCustomDTO;
+import com.at.spring.jsonresponse.response.IResponseCustomDTO;
 
 
 /**
