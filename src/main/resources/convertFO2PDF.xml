@@ -1,0 +1,14 @@
+<property name="fop.home" value="....path to your FOP HOME directory..."/>
+
+<taskdef name="fop"
+         classname="org.apache.fop.tools.anttasks.Fop">
+  <classpath>
+    <fileset dir="${fop.home}/lib">
+      <include name="*.jar"/>
+    </fileset>
+    <fileset dir="${fop.home}/build">
+      <include name="fop.jar"/>
+      <include name="fop-hyph.jar" />
+    </fileset>
+  </classpath>
+</taskdef>

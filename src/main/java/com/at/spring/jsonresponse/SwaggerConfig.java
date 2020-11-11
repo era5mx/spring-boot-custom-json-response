@@ -14,6 +14,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.async.DeferredResult;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -37,6 +38,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * The Class SwaggerConfig.
  */
+@Configuration
 @EnableWebMvc
 @ConditionalOnWebApplication
 @SpringBootApplication
@@ -46,25 +48,22 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 }) */
 public class SwaggerConfig implements WebMvcConfigurer {
 	
+	@SuppressWarnings("unused")
 	@Autowired
 	private TypeResolver typeResolver;
+
+	private final static String service="JSONResponse";
 	
-	@Value("${server.servlet.context-path")
-	private String basePath;
 	@Value("${app.version}")
 	private String appVersion;
-	
+	@Value("${server.servlet.context-path")
+	private String basePath;
 	@Value("${contact.author}")
 	private String author;
 	@Value("${contact.url}")
 	private String url;
 	@Value("${contact.email}")
 	private String email;
-	
-    final String apiDocs = "/v2/api-docs";
-    final String configUi = "/swagger-resources/configuration/ui";
-    final String configSecurity = "/swagger-resources/configuration/security";
-    final String resources = "/swagger-resources";
 
 	/**
 	 * The main method.
@@ -114,10 +113,11 @@ public class SwaggerConfig implements WebMvcConfigurer {
 	
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-    	registry.addRedirectViewController(basePath + apiDocs, apiDocs).setKeepQueryParams(true);
-        registry.addRedirectViewController(basePath + resources, resources);
-        registry.addRedirectViewController(basePath + configUi, configUi);
-        registry.addRedirectViewController(basePath + configSecurity, configSecurity);
+    	SwaggerConfigPath scp = new SwaggerConfigPath(service);
+    	registry.addRedirectViewController(basePath + scp.getApiDocs(), scp.getApiDocs()).setKeepQueryParams(true);
+        registry.addRedirectViewController(basePath + scp.getResources(), scp.getResources());
+        registry.addRedirectViewController(basePath + scp.getConfigUi(), scp.getConfigUi());
+        registry.addRedirectViewController(basePath + scp.getConfigSecurity(), scp.getConfigSecurity());
         registry.addRedirectViewController(basePath, "/");
     }
 	

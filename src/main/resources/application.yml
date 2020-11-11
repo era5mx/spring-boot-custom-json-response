@@ -4,6 +4,6 @@ server:
 app:
   version: '@pom.version@'
 contact:
-  author: 'Agile Thought'
-  email: 'contact%40agilethought.com'
-  url: 'https%3A%2F%2Fagilethought.com%2F'
+  author: Agile Thought
+  email: contact%40agilethought.com
+  url: https%3A%2F%2Fagilethought.com%2F
